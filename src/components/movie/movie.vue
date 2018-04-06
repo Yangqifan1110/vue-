@@ -3,7 +3,7 @@
 
 
 <common-Header>
-  <span slot='title'>Movie</span>
+  <span slot='title'>正在热播</span>
 </common-Header>
   <router-view/>
 <common-Footer></common-Footer>

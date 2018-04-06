@@ -4,11 +4,15 @@ import HelloWorld from '@/components/HelloWorld'
 import movie from '@/components/movie/movie'
 import movieList from '@/components/movie/movieList'
 import movieDetail from '@/components/movie/movieDetail'
-import music from '@/components/music/music'
-import near from '@/components/music/near'
+import issue from '@/components/issue/issue'
+import near from '@/components/issue/near'
+import choose from '@/components/issue/choose'
+import time from '@/components/issue/time'
+import submit from '@/components/issue/submit'
 
-import book from '@/components/book/book'
-import photo from '@/components/photo/photo'
+import buy from '@/components/buy/buy'
+import buyList from '@/components/buy/buyList'
+
 
 Vue.use(Router)
 
@@ -33,25 +37,37 @@ export default new Router({
         }
       ]
     },{
-      path:'/music',
-      component:music,
-      redirect:'/music/near',
+      path:'/issue',
+      component:issue,
+      redirect:'/issue/near',
       children:[
         {
-          path:'/music/near',
+          path:'/issue/near',
           component:near
-        }
-        // {
-        //   path:'/movie/movieDetail/:movieId',
-        //   component:movieDetail
-        // }
+        },
+        {
+          path:'/issue/choose/:whereId',
+          component:choose,
+
+        },
+        {
+          path:'/issue/time/:whereId/:chooseId',
+          component:time
+        },  {
+            path:'/issue/submit/:whereId/:chooseId/:timeId',
+            component:submit
+          }
       ]
     },{
-      path:'/book',
-      component:book
-    },{
-      path:'/photo',
-      component:photo
+      path:'/buy',
+      component:buy,
+      redirect:'/buy/buyList',
+      children:[
+        {
+          path:'/buy/buyList',
+          component:buyList
+        }
+      ]
     }
 
   ]

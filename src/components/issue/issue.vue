@@ -3,7 +3,7 @@
 
 
   <common-Header>
-    <span slot='title'>Book</span>
+    <span slot='title'>发布</span>
   </common-Header>
   <router-view/>
   <common-Footer></common-Footer>

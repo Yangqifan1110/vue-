@@ -40,7 +40,7 @@ export default {
 .text{ padding: 1rem 0;}
 .text .omg{text-align: center;}
 .text .omg img{ margin: 5% 0;}
-.text h1{ color: #000; text-align: center;}
+.text h1{ color: #000; text-align: center; }
 .text p{  font-size: 0.32rem; padding: 5%; color: #000; line-height: 0.4rem}
 
 </style>

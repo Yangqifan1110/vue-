@@ -1,9 +1,8 @@
 <template>
 <ul class="footer" :style="{background:bg}">
-  <li><router-link to="/movie/movieList">电影</router-link></li>
-  <li><router-link to="/music">音乐</router-link></li>
-  <li><router-link to="/book">书籍</router-link></li>
-  <li><router-link to="/photo">图片</router-link></li>
+  <li><router-link to="/movie/movieList">最近电影</router-link></li>
+  <li><router-link to="/issue">发布电影票</router-link></li>
+  <li><router-link to="/buy">购买二手票</router-link></li>
 </ul>
 </template>
 

@@ -3,7 +3,7 @@
 
 
   <common-Header>
-    <span slot='title'>Photo</span>
+    <span slot='title'>购买</span>
   </common-Header>
   <router-view/>
   <common-Footer></common-Footer>
